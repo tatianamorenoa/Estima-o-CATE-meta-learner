@@ -4,7 +4,7 @@ from simulation.data_simulation import (
     simular_dataset
 )
 
-R = 20
+R = 500
 
 base_path = "data/balanced"
 
@@ -24,7 +24,7 @@ os.makedirs(
 
 for rep in range(R):
 
-    for n in [100, 2000, 5000]:
+    for n in [100, 1000, 2500]:
 
         data = simular_dataset(
             n=n,
@@ -59,7 +59,7 @@ os.makedirs(
 
 for rep in range(R):
 
-    for n in [100, 2000, 5000]:
+    for n in [100, 1000, 2500]:
 
         data = simular_dataset(
             n=n,
