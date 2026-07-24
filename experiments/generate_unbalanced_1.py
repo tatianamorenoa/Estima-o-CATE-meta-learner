@@ -4,7 +4,7 @@ from simulation.data_simulation import (
     simular_dataset
 )
 
-R = 20
+R = 500
 
 base_path = os.path.join(
     "data",
@@ -28,7 +28,7 @@ os.makedirs(
 
 for rep in range(R):
 
-    for n in [100, 2000, 5000]:
+    for n in [100, 1000, 2500]:
 
         data = simular_dataset(
             n=n,
@@ -63,7 +63,7 @@ os.makedirs(
 
 for rep in range(R):
 
-    for n in [100, 2000, 5000]:
+    for n in [100, 1000, 2500]:
 
         data = simular_dataset(
             n=n,
@@ -83,3 +83,4 @@ for rep in range(R):
         )
 
 print("+1 e -0 Monte Carlo finalizado")
+
